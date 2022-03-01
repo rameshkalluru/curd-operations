@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="3">
+        <tr>
+            <th>sid</th>
+            <th>name</th>
+            <th>age</th>
+            <th>local</th>
+        </tr>
+        {% for i in res %}
+        <tr>
+            <td>{{i.sid}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.age}}</td>
+            <td>{{i.local}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
